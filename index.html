@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>moncvenligne</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .divbv{
+            height: fit-content;
+            width: 100%;
+            position: relative;
+            animation: anim 5s ease-in-out;
+            position: fixed;
+            top: -20%;
+            text-align: center;
+            background-color:blue;
+            box-shadow: 0 3px 3px ;
+            z-index: 99;
+            
+            
+            
+        
+        }
+        .bx-menu{
+            font-size: 200%;
+            top: 0;
+            z-index: 99;
+            cursor: pointer;
+            position: fixed;
+        }
+        .menu{
+            height: 155vh;
+            width: 25%;
+            background-color:beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 5px 5px ;
+            z-index: 99;
+            position: fixed;
+            left: -29%;
+            top: 5%;
+            
+
+        }
+        .menu a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            line-height: 40px;
+
+        }
+        .menu a:hover{
+            background-color: blanchedalmond;
+            height: fit-content;
+            box-shadow: 0 0 5px ;
+        }
+        .bx {
+            font-size: 26px;
+            color: blue;
+        }
+        .menu.active{
+            left: 0;
+            transition:  0.3s ease-in-out;
+        }
+        .menunav{
+            
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+            position: fixed;
+            top: 0;
+            background-color: beige;
+            transform: translateY(-50px);
+            margin-left: 5px;
+            
+            
+        }
+        .menunav a{
+            text-decoration: none;
+            color:black ;
+            text-align: center;
+            font-size: 70%;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100%;
+            
+            
+        }
+        .profil{
+            width: 40%;
+           
+            margin-top: 5px;
+        }
+        .pres{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px;
+            margin-top: 50px;
+        }
+        .texte{
+            display: flex;
+            background-color: beige;
+            align-items: center;
+            justify-content: center;
+            height:40%;
+            box-shadow: 0 0 5px;
+            width: 40%;
+        }
+        .BARS{
+            height:fit-content;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+           
+           
+
+        }
+        .B{
+            height: 2px;
+            width: calc(100%*3);
+            background-color: red;
+        }
+        .rouge{
+            background-color: red;
+        }
+        .jaune{
+            background-color: yellow;
+
+        }
+        .bleu{
+            background-color: blue;
+        }
+        #IP{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+        .H{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .COPY{
+            width: 100%;
+            height: fit-content;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        @keyframes anim{
+            3%{
+                transform: translateY(200%);
+            }
+            10%{
+                transform: translateY(200%);
+            }
+            20%{
+                transform: translateY(170%);
+            }
+            30%{
+                transform: translateY(170%);
+            
+            }
+            40%{
+                transform: translateY(170%);
+            }
+            100%{
+                transform: translateY(-50%);
+            }
+        }
+        @media screen and (min-width: 678px){
+            @keyframes anim {
+                3%{
+                    transform: translateY(250%);
+                }
+                
+            }
+            .bx{
+                font-size: 30px;
+            }
+    
+          
+          
+          
+        }
+       
+
+       
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="divbv">
+        <h3 class="bv">Bienvenue! vous êtes bien sur le site Web d'Elie Salumu, Vous y trouverez toutes les informations le concernant </h3>
+    </div>
+    <i class=" bx bx-menu" onclick="men()"></i>
+    <i class="bx bx-x" style="display: none;"></i>
+    <div class="menu">
+        <a href="">Acceuil</a>
+        <a href="">Contact</a>
+        <a href=""> A propos </a>
+        <a href=""> Autres</a>
+    </div>
+    <div class="menunav">
+        <a href="#IP"> <i class="bx bx-user"></i> <br>Identité <br>Personelle</a>
+        <a href="#EF"> <i class="bx bx-book"></i><br> Etudes <br> faites</a>
+        <a href="#EP"> <i class="bx bx-home"></i> <br> Experience <br> Professionelle</a>
+        <a href="#AF"> <i class="bx bx-notepad"></i> <br>Autres <br>Formations</a>
+        <a href="#LP"> <i class="bx bx-font"></i> <br> Langues <br>Parlées</a>
+       
+       
+    </div>
+    <div class="pres">
+        <img src="/fichiers/MOI.jpg" alt="" class="profil">
+        <h6 class="texte">  Qui suije? <br> <br> de son nom Juridique Kalonda Salumu
+        Elie, il est Licencié en relations <br> Internationales, à l'Université de <br>
+        Kinshasa, et Aprenant de 3ieme Cycle dans le même département. Passionné <br>
+        de l'informatique, plus particulièrement de la Programation, il poursuits <br>
+        Plusiuers Formations avec dévouement, a déjà un niveau considérable en <br>
+        Programation Web.  </h6>
+    </div>
+    <div class="BARS">
+        <div class="B rouge"></div>
+        <div class="B jaune"></div>
+        <div class="B bleu"></div>
+    </div>
+    <section class="IDP">
+        <ul id="IP">
+            <strong><li> IDENTITE PERSONELLE </li></strong>
+            Nom: Kalonda <br>
+            Post-nom: Salumu <br>
+            Prenom: Elie <br>
+            Né à Lubumbashi le 31 03 2000 <br>
+            Adresse: 29,Av Bondeko, Q/ Telecom C/Ngaliema <br>
+            tel: +243 827292100 <br>
+            <a href="mailto: Elisalumu675@gmail.com" style="text-decoration: none;">Mail</a><br> 
+            <a href="https://wa.me/243827292100" style="text-decoration: none;"> Watsapp</a>
+
+        </ul>
+        
+        <div class="BARS">
+            <div class="B rouge"></div>
+            <div class="B jaune"></div>
+            <div class="B bleu"></div>
+        </div>
+        <ul id="EF" class="H">
+           <strong> <li > ETUDES FAITES </li> </strong>
+           <strong>2004-2012:</strong>  Obtention du Certificat d’Etudes Primaires au Complexe Scolaire Monica à Kinshasa <br>
+           <strong >2012- 2018:</strong> Obtention du Diplôme d’Etat en Chimie Biologie   au lycée Julie Billiart à Kinshasa <BR>
+           <strong>2018-2021:</strong>  Obtention du Diplôme de Graduat en Relations Internationales à l’Université de Kinshasa <br>
+            <strong>2021-2023:</strong> Obtention du Diplôme de Licence En Relations Internationales à L’université de Kinshasa 
+        </ul>
+        <div class="BARS">
+            <div class="B rouge"></div>
+            <div class="B jaune"></div>
+            <div class="B bleu"></div>
+        </div>
+        <ul id="EP" class="H">
+             <strong><li> EXPERIENCE PROFESSIONELLE</li></strong> <br>
+             <strong>2019 - Nos jours :</strong> Agent à l’administration des Affaires Humanitaires et Solidarité Nationale. <br>
+             <strong>2020-2021 : </strong> Agent Maketeur à Africaire RDC <br>
+             <strong> 2023 :</strong> Directeur de Campagne  d’une candidature à la députation Nationale et Provinciale en RDC.<br>
+             <strong> Actuellement :</strong> Directeur de Cabinet adjoint au Conseil Provincial de la jeunesse de Kinshasa    <br> 
+
+
+        </ul>
+        <div class="BARS">
+            <div class="B rouge"></div>
+            <div class="B jaune"></div>
+            <div class="B bleu"></div>
+        </div>
+        <ul class="H">
+            <li id="AF"> AUTRES FORMATIONS</li > <br>
+    
+                <strong>Juin 2016 :</strong>Formation en Word, Excel et Powerpoint  au centre de Formations Bilingue <br>
+                <strong>Juillet  2018 : </strong> Formation sur le métier de Formateur à Bowaba N Congo <br>
+                <strong>Mai 2021 :</strong> Formation en Leadership et Gestion des conflits, en stage au Minafet/RDC <br>
+                <strong>Mars 2023 :</strong> Formation sur  la Communication Sociale, Politique et Diplomatique Wallonie Bruxelles/Kinshasa, Union Européenne en RDC.  <br>
+                <strong>Juin 2023- Mars 2024 :</strong>  <br>
+                <strong>Actuellement :</strong>Formation en Programmation avec Python sur Open Classroom  <br>
+
+
+
+        </ul>
+        <div class="BARS">
+            <div class="B rouge"></div>
+            <div class="B jaune"></div>
+            <div class="B bleu"></div>
+        </div>
+        <ul class="H" id="LP">
+            <li> LANGUES PARLEES</li> <br>
+            Français <br>
+            Anglais <br>
+            Lingala <br>
+            Swahili
+
+
+
+        </ul>
+        <div class="BARS">
+            <div class="B rouge"></div>
+            <div class="B jaune"></div>
+            <div class="B bleu"></div>
+        </div>
+
+    </section>
+    <footer class="COPY">
+        <p> &copy; Elie salumu 2024, Tous droits réservés</p>
+
+    </footer>
+    
+
+
+    <script>
+        function men(){
+            
+            let menui=document.querySelector(".menu");
+            menui.classList.toggle("active");
+            let fois=document.querySelector('.x').style.dysplay=flex;
+            
+           
+           
+
+            
+           
+
+
+        }
+        
+        
+
+    </script>
+  
+
+  
+
+    
+</body>
+</html>
